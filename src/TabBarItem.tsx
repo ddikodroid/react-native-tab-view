@@ -41,8 +41,8 @@ export type Props<T extends Route> = {
   style: StyleProp<ViewStyle>;
 };
 
-const DEFAULT_ACTIVE_COLOR = 'rgba(255, 255, 255, 1)';
-const DEFAULT_INACTIVE_COLOR = 'rgba(255, 255, 255, 0.7)';
+const DEFAULT_ACTIVE_COLOR = '#991f5d';
+const DEFAULT_INACTIVE_COLOR = '#948c8f';
 
 export default class TabBarItem<T extends Route> extends React.Component<
   Props<T>

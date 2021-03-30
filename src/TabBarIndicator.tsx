@@ -139,7 +139,7 @@ export default class TabBarIndicator<T extends Route> extends React.Component<
 
 const styles = StyleSheet.create({
   indicator: {
-    backgroundColor: '#ffeb3b',
+    backgroundColor: '#991f5d',
     position: 'absolute',
     left: 0,
     bottom: 0,

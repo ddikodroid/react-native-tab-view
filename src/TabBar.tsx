@@ -72,7 +72,7 @@ export default class TabBar<T extends Route> extends React.Component<
 > {
   static defaultProps = {
     getLabelText: ({ route }: Scene<Route>) =>
-      typeof route.title === 'string' ? route.title.toUpperCase() : route.title,
+      typeof route.title === 'string' ? route.title : route.title,
     getAccessible: ({ route }: Scene<Route>) =>
       typeof route.accessible !== 'undefined' ? route.accessible : true,
     getAccessibilityLabel: ({ route }: Scene<Route>) =>
@@ -459,7 +459,7 @@ const styles = StyleSheet.create({
     overflow: Platform.select({ default: 'scroll', web: undefined }),
   },
   tabBar: {
-    backgroundColor: '#2196f3',
+    backgroundColor: '#ffffff',
     elevation: 4,
     shadowColor: 'black',
     shadowOpacity: 0.1,
